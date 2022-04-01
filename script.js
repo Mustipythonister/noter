@@ -1,9 +1,4 @@
-function save(){
-	var note = document.getElementById("text").value;
-	var name = document.getElementById("name").value;
-	var note_correct = "<li style='color:#474747;'><strong>"+note+"</strong></li>"+"<br>";
-	localStorage.setItem(name, note_correct);
-}
+
 function open_note(){
 	var note_name = document.getElementById("open").value;
 	var latest_notes = localStorage.getItem(note_name);
@@ -77,4 +72,11 @@ function d(){
 	localStorage.removeItem(where);
 	open_all();
 
+}
+function save(){
+	var note = document.getElementById("text").value;
+	var name = document.getElementById("name").value;
+	var note_correct = "<li style='color:#474747;'><strong>"+note+"</strong></li>"+"<br>";
+	localStorage.setItem(name, note_correct);
+	open_all();
 }
