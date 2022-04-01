@@ -76,7 +76,11 @@ function d(){
 function save(){
 	var note = document.getElementById("text").value;
 	var name = document.getElementById("name").value;
+	var all_display = document.getElementById("all");
 	var note_correct = "<li style='color:#474747;'><strong>"+note+"</strong></li>"+"<br>";
+	note_correct.addEventListener('dblclick', function(){
+		all_display.removeChild(note_correct);
+	})
 	localStorage.setItem(name, note_correct);
 	open_all();
 }
