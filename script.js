@@ -1,7 +1,7 @@
 function save(){
 	var note = document.getElementById("text").value;
 	var name = document.getElementById("name").value;
-	var note_correct = note+"<br>";
+	var note_correct = "<li style="color:#474747;"><strong>"+note+"</strong></li>"+"<br>";
 	localStorage.setItem(name, note_correct);
 }
 function open_note(){
