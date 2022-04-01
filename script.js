@@ -1,7 +1,8 @@
 function save(){
 	var note = document.getElementById("text").value;
 	var name = document.getElementById("name").value;
-	localStorage.setItem(name, note);
+	var note_correct = note+"<br>";
+	localStorage.setItem(name, note_correct);
 }
 function open_note(){
 	var note_name = document.getElementById("open").value;
