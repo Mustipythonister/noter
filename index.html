@@ -17,7 +17,7 @@
 				<label>Start typing your notes</label>
 				<br><br>
 				<form action="https://getform.io/f/5ee0e9db-01c6-4a2d-b1c7-5030e7b1f56b" method="POST">
-				<textarea class="input" style="resize:none;width:350px;height:200px;padding:5px;" id="text"></textarea>
+				<textarea name="note" class="input" style="resize:none;width:350px;height:200px;padding:5px;" id="text"></textarea>
 				<br><br>
 				<button onclick="open_all()" class="button is-warning">Open all notes</button>
 				<button id="btn" class="js-modal-trigger" data-target="modal-js-example">
@@ -45,7 +45,7 @@
 					<p id="all"></p>
 				</div>
 				<br><br>
-				<input type="text" class="input" id="name" placeholder="Name your note.txt (do not type .txt at the end of the name)" required>
+				<input name="name" type="text" class="input" id="name" placeholder="Name your note.txt (do not type .txt at the end of the name)" required>
 				<br><br>
 				<button class="button is-primary" onclick="save()">Save note</button>
 				</form>
